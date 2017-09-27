@@ -1,5 +1,11 @@
 When would you want to create a remote repository rather than keeping all your work local?
 A:当我的文件需要被共享的时候，例如项目组成员间。当我的文件需要在其他地方被使用时，例如我在家完成了工作，然后上传到github，来公司以后再pull下来。
 
-为何你希望始终手动地拉取更改，而不是让 Git 自动与你的远程版本库保持同步？
+为何你希望始终手动地pull更改，而不是让 Git 自动与你的远程版本库保持同步？
 A：
+
+说明Fork、Clone和Branch之间的不同。何时使用某种功能而不是另一种？
+A:
+Fork:拷贝他人的项目到自己的Repository中,也可以clone到本地，可以进行修改，然后push到Repository中，但不会对源项目有任何影响。
+Clone:将Remote的项目Clone到本地，可以进行修改，然后push到Repository中。
+Branch:项目的分支，一个项目根据功能，版本的不同，可以有很多分支，都可以进行push pull操作
