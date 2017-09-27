@@ -2,17 +2,22 @@ What happens when you initialize a repository? Why do you need to do it?
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
-暂存区用于存放工作目录中需要提交到远端的代码，一般以一次逻辑提交为提交。
+暂存区用于存放工作目录中需要提交到远端的代码，通常以一次逻辑更改为提交。
+
 How can you use the staging area to make sure you have one commit per logical
 change?
+git add时，一次只添加一个逻辑修改文件。
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+当几个版本都会被用到时，例如实验版本，独特性能版本，就用分支来存储这些不同的版本。而不是每次都git checkout xxxxx来还原到不同的分支。保持主分支能正常运转。
 
 How do the diagrams help you visualize the branch structure?
+图表用来记录每一次commit，和每一次创建新的分支。这样看起来就很清楚。
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+可以将不同的功能合并在一起。
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
